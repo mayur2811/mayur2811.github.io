@@ -1022,6 +1022,194 @@ body {
     margin-top: 48px;
 }
 
+/* Upcoming Projects Section */
+.upcoming-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-top: 60px;
+    margin-bottom: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.upcoming-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-primary);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.upcoming-card {
+    background: linear-gradient(135deg, rgba(26, 26, 37, 0.8), rgba(18, 18, 26, 0.9));
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.upcoming-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.upcoming-card:hover::before {
+    transform: scaleX(1);
+}
+
+.upcoming-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15),
+                0 0 60px rgba(139, 92, 246, 0.1);
+}
+
+.upcoming-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.upcoming-card:nth-child(2) .upcoming-icon {
+    animation-delay: 0.5s;
+}
+
+.upcoming-card:nth-child(3) .upcoming-icon {
+    animation-delay: 1s;
+}
+
+.upcoming-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.upcoming-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.upcoming-tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.upcoming-tech span {
+    padding: 4px 12px;
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    color: var(--accent-secondary);
+    transition: all 0.3s ease;
+}
+
+.upcoming-card:hover .upcoming-tech span {
+    background: rgba(6, 182, 212, 0.2);
+    border-color: rgba(6, 182, 212, 0.4);
+}
+
+/* Enhanced project card animations */
+.project-card.featured {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.project-card.featured::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, rgba(139, 92, 246, 0.1), transparent 30%);
+    animation: rotate 8s linear infinite;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-card.featured:hover::before {
+    opacity: 1;
+}
+
+@keyframes rotate {
+    100% { transform: rotate(360deg); }
+}
+
+.project-card.featured:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(139, 92, 246, 0.2);
+}
+
+.project-placeholder {
+    transition: transform 0.4s ease;
+}
+
+.project-card.featured:hover .project-placeholder {
+    transform: scale(1.05);
+}
+
+/* Stagger animation for project cards */
+.project-card:not(.featured) {
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease forwards;
+}
+
+.project-card:not(.featured):nth-child(2) { animation-delay: 0.1s; }
+.project-card:not(.featured):nth-child(3) { animation-delay: 0.2s; }
+.project-card:not(.featured):nth-child(4) { animation-delay: 0.3s; }
+.project-card:not(.featured):nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive for upcoming grid */
+@media (max-width: 900px) {
+    .upcoming-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ========================================
    EDUCATION SECTION
 ======================================== */
