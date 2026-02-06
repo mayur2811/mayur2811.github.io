@@ -37,6 +37,8 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#articles" class="nav-link">Articles</a></li>
+                <li><a href="#security" class="nav-link">Security</a></li>
                 <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
             </ul>
             
@@ -351,7 +353,14 @@
                 <article class="project-card featured">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <span>🌉</span>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                <path d="M4 13h16"/>
+                                <path d="M8 17v-4"/>
+                                <path d="M16 17v-4"/>
+                                <path d="M12 17v-4"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="project-content">
@@ -368,10 +377,40 @@
                             <span>Next.js</span>
                             <span>TypeScript</span>
                             <span>RainbowKit</span>
-                            <span>Node.js Relayer</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/mayur2811/chainbridge" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- NexusLend AI - NEW FEATURED -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="nexuslend.png" alt="NexusLend AI Dashboard" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-label">Featured Project</div>
+                        <h3 class="project-title">NexusLend AI - DeFi Lending Protocol</h3>
+                        <p class="project-description">
+                            The first AI-powered DeFi lending protocol that protects users from liquidation. 
+                            Features supply/borrow assets, dynamic APY rates, health factor monitoring, and receipt tokens.
+                            Deployed on Sepolia testnet with full documentation.
+                        </p>
+                        <div class="project-tech">
+                            <span>Solidity</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Chainlink</span>
+                            <span>DeFi</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mayur2811/nexuslend-" target="_blank" rel="noopener noreferrer" class="project-link">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                                 </svg>
@@ -457,16 +496,6 @@
             <h3 class="upcoming-title">🚀 Coming Soon</h3>
             <div class="upcoming-grid">
                 <article class="upcoming-card">
-                    <div class="upcoming-icon">⚡</div>
-                    <h4>NexusLend</h4>
-                    <p>DeFi lending protocol with flash loans, dynamic interest rates, and liquidation engine</p>
-                    <div class="upcoming-tech">
-                        <span>Solidity</span>
-                        <span>Chainlink</span>
-                        <span>DeFi</span>
-                    </div>
-                </article>
-                <article class="upcoming-card">
                     <div class="upcoming-icon">🎰</div>
                     <h4>Prophecy</h4>
                     <p>Decentralized prediction market with AMM pricing and oracle-based resolution</p>
@@ -476,21 +505,221 @@
                         <span>AMM</span>
                     </div>
                 </article>
-                <article class="upcoming-card">
-                    <div class="upcoming-icon">🛡️</div>
-                    <h4>ZeroDay Labs</h4>
-                    <p>Security research portfolio showcasing smart contract vulnerabilities and audit findings</p>
-                    <div class="upcoming-tech">
-                        <span>Security</span>
-                        <span>Auditing</span>
-                        <span>DeFi</span>
-                    </div>
-                </article>
             </div>
             
             <div class="projects-cta">
                 <a href="https://github.com/mayur2811" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                     View All Repositories
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         MEDIUM ARTICLES
+    ======================================== -->
+    <section class="articles section" id="articles">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span> Articles & Insights
+            </h2>
+            <p class="section-subtitle">Sharing knowledge about AI, Web3 security, and blockchain technology</p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="article-title">Your AI Employee Started Work Today — And You Didn't Even Know It</h3>
+                    <p class="article-excerpt">Exploring how AI agents are silently transforming the workplace...</p>
+                    <a href="https://medium.com/@zalamayursinh2811/your-ai-employee-started-work-today-and-you-didnt-even-know-it-1ab98f067fd7" target="_blank" class="article-link">Read on Medium →</a>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="article-title">The $3.2 Trillion Opportunity: AI Agents Reshaping Enterprise Security</h3>
+                    <p class="article-excerpt">How early adopters are leveraging AI for unprecedented security gains...</p>
+                    <a href="https://medium.com/@zalamayursinh2811/the-3-2-trillion-opportunity-why-ai-agents-are-reshaping-enterprise-security-and-how-early-316db43139f3" target="_blank" class="article-link">Read on Medium →</a>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <h3 class="article-title">Cheat Sheet for Quick Find Scams in Web3</h3>
+                    <p class="article-excerpt">Essential guide to identify and avoid Web3 scams before it's too late...</p>
+                    <a href="https://medium.com/@zalamayursinh2811/cheat-sheet-for-quick-find-scams-in-web3-dca169c00010" target="_blank" class="article-link">Read on Medium →</a>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                    </div>
+                    <h3 class="article-title">AI Smart Contract Audit Checklist 2025</h3>
+                    <p class="article-excerpt">Must-know security checks before you lose money to vulnerabilities...</p>
+                    <a href="https://medium.com/@zalamayursinh2811/%EF%B8%8Fai-smart-contract-audit-checklist-2025-you-must-know-before-you-lost-money-9e063e94cb13" target="_blank" class="article-link">Read on Medium →</a>
+                </article>
+                
+                <article class="article-card">
+                    <div class="article-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="article-title">Complete 2025 Crypto Hacks & Exploits</h3>
+                    <p class="article-excerpt">Comprehensive analysis of all major crypto security incidents in 2025...</p>
+                    <a href="https://medium.com/@zalamayursinh2811/complete-2025-crypto-hacks-exploits-all-incidents-9c6fa81dde10" target="_blank" class="article-link">Read on Medium →</a>
+                </article>
+            </div>
+            
+            <div class="articles-cta">
+                <a href="https://medium.com/@zalamayursinh2811" target="_blank" class="btn btn-secondary">
+                    View All Articles
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECURITY RESEARCH / BUG BOUNTY
+    ======================================== -->
+    <section class="security section" id="security">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06.</span> Security Research
+            </h2>
+            <p class="section-subtitle">Active security researcher identifying vulnerabilities in DeFi protocols</p>
+            
+            <div class="security-stats">
+                <div class="stat-card">
+                    <span class="stat-number">9</span>
+                    <span class="stat-label">Reports Submitted</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Protocols Tested</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Critical Findings</span>
+                </div>
+                <div class="stat-card pending">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Rewards Pending</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">$0</span>
+                    <span class="stat-label">Rewards Earned</span>
+                </div>
+            </div>
+            
+            <div class="reports-table">
+                <div class="table-header">
+                    <span>Platform</span>
+                    <span>Protocol</span>
+                    <span>Finding</span>
+                    <span>Severity</span>
+                    <span>Status</span>
+                    <span>Reward</span>
+                </div>
+                
+                <div class="table-row highlight">
+                    <span class="platform">Direct Email</span>
+                    <span class="protocol">THORChain</span>
+                    <span class="finding">Critical DeFi Vulnerability — Under Responsible Disclosure</span>
+                    <span class="severity critical">Critical</span>
+                    <span class="status approved">Approved</span>
+                    <span class="reward pending-reward">Pending</span>
+                </div>
+                
+                <div class="table-row highlight">
+                    <span class="platform">Direct Email</span>
+                    <span class="protocol">THORChain</span>
+                    <span class="finding">Critical DeFi Vulnerability — Under Responsible Disclosure</span>
+                    <span class="severity critical">Critical</span>
+                    <span class="status pending">Awaiting Decision</span>
+                    <span class="reward">—</span>
+                </div>
+                
+                <div class="table-row">
+                    <span class="platform">HackenProof</span>
+                    <span class="protocol">Astros</span>
+                    <span class="finding">Multi-Signature Bypass via Uninitialized Threshold</span>
+                    <span class="severity critical">Critical</span>
+                    <span class="status duplicate">Duplicate</span>
+                    <span class="reward">$0</span>
+                </div>
+                
+                <div class="table-row">
+                    <span class="platform">HackenProof</span>
+                    <span class="protocol">Solv</span>
+                    <span class="finding">Cross-Vault Signature Replay Attack</span>
+                    <span class="severity high">High</span>
+                    <span class="status closed">Out of Scope</span>
+                    <span class="reward">$0</span>
+                </div>
+                
+                <div class="table-row">
+                    <span class="platform">HackenProof</span>
+                    <span class="protocol">Celestia</span>
+                    <span class="finding">rsmt2d Nil/Empty Data DoS Vulnerability</span>
+                    <span class="severity medium">Medium</span>
+                    <span class="status informative">Informative</span>
+                    <span class="reward">$0</span>
+                </div>
+                
+                <div class="table-row">
+                    <span class="platform">HackenProof</span>
+                    <span class="protocol">Celestia</span>
+                    <span class="finding">go-fraud Height Validation Bypass</span>
+                    <span class="severity medium">Medium</span>
+                    <span class="status informative">Informative</span>
+                    <span class="reward">$0</span>
+                </div>
+            </div>
+            
+            <h3 class="platforms-title">Submission Platforms</h3>
+            <div class="platforms-grid">
+                <a href="https://hackenproof.com/hackers/zalamayursinh282002" target="_blank" class="platform-card">
+                    <div class="platform-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <span class="platform-name">HackenProof</span>
+                    <span class="platform-desc">Bug Bounty Platform</span>
+                </a>
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <span class="platform-name">Direct Email</span>
+                    <span class="platform-desc">Private Disclosure</span>
+                </div>
+            </div>
+            
+            <div class="security-cta">
+                <a href="https://hackenproof.com/hackers/zalamayursinh282002" target="_blank" class="btn btn-primary">
+                    View HackenProof Profile
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
                     </svg>
