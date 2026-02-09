@@ -58,12 +58,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Array of titles to cycle through
     const titles = [
-        'Web3 Full-Stack Developer',
-        'Solidity Smart Contract Engineer',
-        'Blockchain Developer',
-        'DeFi Protocol Builder',
-        'Remote Work Specialist'
+        'Blockchain Security Researcher',
+        'Smart Contract Auditor',
+        'Solidity Developer',
+        'DeFi Security Specialist',
+        'Bug Bounty Hunter'
     ];
+
     
     let titleIndex = 0;       // Current title in array
     let charIndex = 0;        // Current character position
