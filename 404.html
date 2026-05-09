@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>404 | System Breach Detected</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        
+        .error-code {
+            font-size: clamp(6rem, 15vw, 12rem);
+            font-family: var(--font-heading);
+            color: transparent;
+            -webkit-text-stroke: 2px var(--accent-primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .error-code::after {
+            content: "404";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-primary);
+            filter: blur(15px);
+            opacity: 0.5;
+            z-index: -1;
+        }
+        
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            font-family: var(--font-mono);
+        }
+        
+        .error-details {
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1 class="error-message">Route Not Found</h1>
+        <p class="error-details">
+            The endpoint you requested does not exist or has been self-destructed. 
+            Return to the secure network.
+        </p>
+        
+        <a href="/" class="btn btn-primary" style="font-size: 1.1rem;">
+            <i data-lucide="home"></i> Return to Main System
+        </a>
+    </div>
+
+    <!-- Background Noise / Glow -->
+    <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at 50% 50%, rgba(239, 68, 68, 0.05) 0%, transparent 50%); pointer-events: none; z-index: -1;"></div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
