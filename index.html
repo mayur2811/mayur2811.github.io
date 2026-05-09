@@ -3,962 +3,425 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mayursinh Zala - Blockchain Security Researcher & Smart Contract Engineer. Critical bug bounties approved by ThorChain. CertiK-audited smart contracts. Available for remote opportunities.">
-    <meta name="keywords" content="Blockchain Security, Smart Contract Auditor, Solidity, Bug Bounty, Security Researcher, DeFi, ThorChain, Remote Developer">
-    <meta name="author" content="Mayursinh Zala">
-    
+    <meta name="description" content="Mayursinh Zala - Blockchain Security Researcher & Smart Contract Engineer. Critical bug bounties approved by ThorChain. CertiK-audited smart contracts.">
     <title>Mayursinh Zala | Blockchain Security Researcher</title>
     
-    <!-- Google Fonts - Inter for clean modern look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛓️</text></svg>">
-    
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons (Lightweight SVG Icon Library) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <!-- ========================================
-         NAVIGATION BAR
-         - Fixed at top, blurs on scroll
-         - Links to each section
-    ======================================== -->
-    <nav class="navbar" id="navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>MZ<span class="logo-bracket">/&gt;</span>
+            <a href="#hero" class="logo">
+                <span>&lt;</span>MZ<span>/&gt;</span>
             </a>
             
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#articles" class="nav-link">Articles</a></li>
-                <li><a href="#security" class="nav-link">Security</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
-            </ul>
+            <button class="hamburger" aria-label="Menu"></button>
             
-            <!-- Hamburger menu for mobile -->
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
+            <div class="nav-links">
+                <a href="#about">01. About</a>
+                <a href="#experience">02. Experience</a>
+                <a href="#projects">03. Projects</a>
+                <a href="#security">04. Security</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1rem; border-radius: 4px;">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <!-- ========================================
-         HERO SECTION
-         - First thing visitors see
-         - Name, title, and call-to-action
-    ======================================== -->
-    <section class="hero" id="hero">
-        <div class="hero-bg">
-            <div class="hero-grid"></div>
-        </div>
-        
-        <div class="hero-content">
-            <!-- Available badge -->
-            <div class="availability-badge">
-                <span class="pulse"></span>
+    <!-- HERO -->
+    <section id="hero" class="hero container">
+        <div style="width: 100%;">
+            <div class="availability reveal">
+                <span class="pulse-dot"></span>
                 Available for Remote Work
             </div>
             
-            <h1 class="hero-name">
-                Hi, I'm <span class="gradient-text">Mayursinh Zala</span>
+            <h1 class="reveal" style="transition-delay: 0.1s">
+                <span>Mayursinh Zala</span>
             </h1>
             
-            <div class="hero-title">
-                <span class="typewriter" id="typewriter"></span>
-                <span class="cursor">|</span>
+            <div class="typewriter-container reveal" style="transition-delay: 0.2s">
+                <span class="typewriter"></span><span style="animation: blink 1s step-end infinite;">|</span>
             </div>
             
-            <p class="hero-description">
-                Blockchain Security Researcher with <strong>approved critical bug bounties</strong> from ThorChain.
-                CertiK-audited smart contracts for production deployment. Ready to secure your Web3 project from anywhere in the world.
+            <p class="hero-desc reveal" style="transition-delay: 0.3s">
+                Blockchain Security Researcher with approved critical bug bounties from ThorChain. 
+                CertiK-audited smart contracts for production deployment. Securing Web3 protocols from the ground up.
             </p>
             
-            <div class="hero-buttons">
+            <div class="reveal" style="display: flex; gap: 1rem; transition-delay: 0.4s">
                 <a href="#contact" class="btn btn-primary">
-                    <span>Get in Touch</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
+                    Initiate Contact <i data-lucide="arrow-right" style="width: 18px;"></i>
                 </a>
                 <a href="Mayursinh Zala - Resume.pdf" download class="btn btn-secondary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-                    </svg>
-                    Download Resume
+                    <i data-lucide="download" style="width: 18px;"></i> Fetch Resume
                 </a>
             </div>
             
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">12+</span>
-                    <span class="stat-label">GitHub Repos</span>
+            <div class="hero-stats reveal" style="transition-delay: 0.5s">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="12" data-suffix="+">0</span>
+                    <span class="stat-label">Public Repositories</span>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">2</span>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="2">0</span>
                     <span class="stat-label">Critical Bugs Found</span>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Countries Collaborated</span>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="5" data-suffix="+">0</span>
+                    <span class="stat-label">Countries Collab</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container">
+        <h2 class="reveal"><span class="section-num">01</span> System Overview</h2>
         
-        <!-- Scroll indicator -->
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll Down</span>
-        </div>
-    </section>
-
-    <!-- ========================================
-         ABOUT SECTION
-         - Professional summary
-         - Your journey and story
-    ======================================== -->
-    <section class="about section" id="about">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">01.</span> About Me
-            </h2>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        I'm a <span class="highlight">Blockchain Security Researcher</span> passionate about 
-                        finding vulnerabilities and building secure Web3 applications.
-                    </p>
-                    
-                    <p>
-                        I've discovered <strong>critical vulnerabilities in ThorChain's Rujira protocol</strong>,
-                        approved by the ThorSec security team. Currently working as a 
-                        <strong>Smart Contract Developer</strong> at <span class="company-name">iEscrow.io</span>, 
-                        where contracts were audited by CertiK and I resolved all audit findings.
-                    </p>
-                    
-                    <p>
-                        My journey started with curiosity about DeFi security. What began as learning Solidity
-                        turned into hunting vulnerabilities in production protocols and landing remote blockchain roles.
-                        I specialize in smart contract security, DeFi attack vectors, and secure development practices.
-                    </p>
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🔐</span>
-                            <span>ThorChain Bug Bounties</span>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">✅</span>
-                            <span>CertiK Audited Contracts</span>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🌍</span>
-                            <span>Global Remote Experience</span>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🎓</span>
-                            <span>B.E. Computer Engineering</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img src="mayur_crypto.png" alt="Mayursinh Zala - Web3 Developer" class="profile-image">
-                        <div class="frame-border"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         SKILLS SECTION
-         - Categorized tech stack
-         - Visual skill cards
-    ======================================== -->
-    <section class="skills section" id="skills">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">02.</span> Skills & Technologies
-            </h2>
-            
-            <div class="skills-grid">
-                <!-- Blockchain & Web3 -->
-                <div class="skill-card" data-category="blockchain">
-                    <div class="skill-icon">⛓️</div>
-                    <h3 class="skill-category">Blockchain & Web3</h3>
-                    <ul class="skill-list">
-                        <li>Solidity</li>
-                        <li>Ethereum</li>
-                        <li>Web3.js / Ethers.js</li>
-                        <li>ERC-20 / ERC-721</li>
-                        <li>Smart Contract Security</li>
-                        <li>DeFi Protocols</li>
-                        <li>Hardhat / Remix</li>
-                        <li>OpenZeppelin</li>
-                    </ul>
-                </div>
-                
-                <!-- Frontend -->
-                <div class="skill-card" data-category="frontend">
-                    <div class="skill-icon">🎨</div>
-                    <h3 class="skill-category">Frontend Development</h3>
-                    <ul class="skill-list">
-                        <li>React.js</li>
-                        <li>Next.js</li>
-                        <li>JavaScript / TypeScript</li>
-                        <li>HTML5 / CSS3</li>
-                        <li>Web3 Integration</li>
-                        <li>MetaMask / WalletConnect</li>
-                    </ul>
-                </div>
-                
-                <!-- Backend -->
-                <div class="skill-card" data-category="backend">
-                    <div class="skill-icon">⚙️</div>
-                    <h3 class="skill-category">Backend Development</h3>
-                    <ul class="skill-list">
-                        <li>Node.js / Express.js</li>
-                        <li>Java / Spring Boot</li>
-                        <li>REST APIs</li>
-                        <li>Microservices</li>
-                        <li>MySQL / MongoDB</li>
-                        <li>PostgreSQL / IPFS</li>
-                    </ul>
-                </div>
-                
-                <!-- Tools & DevOps -->
-                <div class="skill-card" data-category="tools">
-                    <div class="skill-icon">🛠️</div>
-                    <h3 class="skill-category">Tools & DevOps</h3>
-                    <ul class="skill-list">
-                        <li>Git / GitHub</li>
-                        <li>Truffle / Ganache</li>
-                        <li>Alchemy / Infura</li>
-                        <li>Postman</li>
-                        <li>VS Code</li>
-                        <li>Async Communication</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         EXPERIENCE SECTION
-         - Work history timeline
-         - Key achievements
-    ======================================== -->
-    <section class="experience section" id="experience">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">03.</span> Experience
-            </h2>
-            
-            <div class="timeline">
-                <!-- Blockchain Security Researcher -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Blockchain Security Researcher</h3>
-                            <span class="job-type">BUG BOUNTY</span>
-                        </div>
-                        <div class="job-company">
-                            <span class="company">Independent Security Research</span>
-                            <span class="job-period">Dec 2025 – Present</span>
-                        </div>
-                        <p class="job-description">
-                            Critical Vulnerability Discovery in Production DeFi Protocols
-                        </p>
-                        <ul class="job-achievements">
-                            <li>Discovered <strong>critical vulnerabilities</strong> in ThorChain's Rujira protocol (approved by ThorSec team)</li>
-                            <li>Identified critical-severity bugs in production DeFi smart contracts — details under responsible disclosure</li>
-                            <li>Developed comprehensive proof-of-concept exploits demonstrating attack scenarios</li>
-                            <li>Collaborated with professional security teams on responsible disclosure</li>
-                        </ul>
-                        <div class="job-tech">
-                            <span class="tech-tag">Rust</span>
-                            <span class="tech-tag">CosmWasm</span>
-                            <span class="tech-tag">DeFi Security</span>
-                            <span class="tech-tag">PoC Development</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- iEscrow.io -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Smart Contract Developer (Contract)</h3>
-                            <span class="job-type">FULLY REMOTE</span>
-                        </div>
-                        <div class="job-company">
-                            <span class="company">GrowForce FZCO / iEscrow.io</span>
-                            <span class="job-period">Oct 2025 – Present</span>
-                        </div>
-                        <p class="job-description">
-                            Dubai, UAE - International Cryptocurrency Project
-                        </p>
-                        <ul class="job-achievements">
-                            <li>Developed <strong>production-ready smart contracts</strong> for $ESCROW ecosystem on Ethereum mainnet</li>
-                            <li>Architected ERC-20 token with vesting, multi-phase presale, and staking with variable APY</li>
-                            <li>Contracts audited by <strong>CertiK</strong> — resolved all security findings from audit</li>
-                            <li>Achieved <strong>15% gas optimization</strong> through efficient storage and assembly code</li>
-                            <li>Implemented <strong>95%+ code coverage</strong> test suites using Foundry with fuzz testing</li>
-                            <li>Worked remotely with international team across 5+ countries using async communication</li>
-                        </ul>
-                        <div class="job-tech">
-                            <span class="tech-tag">Solidity</span>
-                            <span class="tech-tag">Foundry</span>
-                            <span class="tech-tag">OpenZeppelin</span>
-                            <span class="tech-tag">ERC-20</span>
-                            <span class="tech-tag">Gas Optimization</span>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <!-- Zidio Development -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="marker-dot"></div>
-                        <div class="marker-line"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="job-title">Full-Stack Developer Intern</h3>
-                            <span class="job-type">REMOTE</span>
-                        </div>
-                        <div class="job-company">
-                            <span class="company">Zidio Development</span>
-                            <span class="job-period">Jan 2025 – May 2025</span>
-                        </div>
-                        <ul class="job-achievements">
-                            <li>Built full-stack web applications using React.js frontend and Java/Spring Boot backend in remote agile environment</li>
-                            <li>Developed e-commerce application with product catalog, user authentication, and payment integration</li>
-                            <li>Gained proficiency in REST API development, SQL databases, and frontend-backend integration</li>
-                            <li>Explored blockchain payment integration and Web3 wallet connectivity concepts</li>
-                        </ul>
-                        <div class="job-tech">
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">REST APIs</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         PROJECTS SECTION
-         - Portfolio of work
-         - Links to GitHub repos
-    ======================================== -->
-    <section class="projects section" id="projects">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">04.</span> Featured Projects
-            </h2>
-            
-            <div class="projects-grid">
-                <!-- AuditSwarm - NEW STARTUP -->
-                <article class="project-card featured">
-                    <div class="project-image" style="background-color: #1a1a2e; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                        <div style="font-size: 3rem; font-weight: bold; background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">AuditSwarm</div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-label" style="color: #00f2fe;">Startup / Product</div>
-                        <h3 class="project-title">AuditSwarm - Protocol AI Security</h3>
-                        <p class="project-description">
-                            The only AI auditor that analyzes your entire protocol, not just single contracts. 
-                            Features multi-contract protocol analysis, dependency graph visualization, and exploit storytelling.
-                            Finds cross-contract exploits before hackers do by mapping contract interactions in context.
-                        </p>
-                        <div class="project-tech">
-                            <span>AI / LLM</span>
-                            <span>Solidity</span>
-                            <span>Protocol Auditing</span>
-                            <span>Next.js</span>
-                            <span>Security</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://auditswarm.in/" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-                                </svg>
-                                <span>Visit Website</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ChainSentry - NEW STARTUP -->
-                <article class="project-card featured">
-                    <div class="project-image" style="background-color: #0f172a; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                        <div style="font-size: 3rem; font-weight: bold; background: linear-gradient(135deg, #10b981 0%, #047857 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ChainSentry</div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-label" style="color: #10b981;">Startup / Product</div>
-                        <h3 class="project-title">ChainSentry - Security for AI Agents</h3>
-                        <p class="project-description">
-                            A robust security layer built specifically for AI agents operating in Web3. 
-                            Protects automated crypto transactions from scams, honeypots, and rug pulls, ensuring safe and verified interactions across networks.
-                        </p>
-                        <div class="project-tech">
-                            <span>AI Agents</span>
-                            <span>React</span>
-                            <span>Blockchain Security</span>
-                            <span>Transaction Screening</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://chain-sentry-green.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-                                </svg>
-                                <span>Visit App</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ChainBridge - NEW FEATURED -->
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                                <path d="M4 13h16"/>
-                                <path d="M8 17v-4"/>
-                                <path d="M16 17v-4"/>
-                                <path d="M12 17v-4"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-label">Featured Project</div>
-                        <h3 class="project-title">ChainBridge - Cross-Chain Token Bridge</h3>
-                        <p class="project-description">
-                            Production-grade cross-chain bridge enabling ERC-20 token transfers between Ethereum networks. 
-                            Features lock-and-mint mechanism, multi-validator support, emergency controls, and a modern React frontend. 
-                            Deployed on Sepolia and Hoodi testnets with 77 unit tests.
-                        </p>
-                        <div class="project-tech">
-                            <span>Solidity</span>
-                            <span>Foundry</span>
-                            <span>Next.js</span>
-                            <span>TypeScript</span>
-                            <span>RainbowKit</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/mayur2811/chainbridge" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                                </svg>
-                                <span>View Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- NexusLend AI - NEW FEATURED -->
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <img src="nexuslend.png" alt="NexusLend AI Dashboard" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-label">Featured Project</div>
-                        <h3 class="project-title">NexusLend AI - DeFi Lending Protocol</h3>
-                        <p class="project-description">
-                            The first AI-powered DeFi lending protocol that protects users from liquidation. 
-                            Features supply/borrow assets, dynamic APY rates, health factor monitoring, and receipt tokens.
-                            Deployed on Sepolia testnet with full documentation.
-                        </p>
-                        <div class="project-tech">
-                            <span>Solidity</span>
-                            <span>Next.js</span>
-                            <span>TypeScript</span>
-                            <span>Chainlink</span>
-                            <span>DeFi</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/mayur2811/nexuslend-" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                                </svg>
-                                <span>View Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Ethereum Todo DApp -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">📝</div>
-                        <div class="project-links-small">
-                            <a href="https://github.com/mayur2811/ethe-todo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Ethereum Todo DApp</h3>
-                    <p class="project-description">
-                        Full-stack decentralized todo application with Solidity smart contracts and Web3.js integration for MetaMask wallet connectivity.
-                    </p>
-                    <div class="project-tech">
-                        <span>Solidity</span>
-                        <span>Web3.js</span>
-                        <span>React.js</span>
-                        <span>Hardhat</span>
-                    </div>
-                </article>
-                
-                <!-- DEX Backend -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">💱</div>
-                        <div class="project-links-small">
-                            <a href="https://github.com/mayur2811/DEX" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">DEX Backend</h3>
-                    <p class="project-description">
-                        Backend infrastructure for decentralized exchange with token swapping and liquidity pool concepts.
-                    </p>
-                    <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Web3.js</span>
-                        <span>Blockchain</span>
-                    </div>
-                </article>
-                
-                <!-- Food Delivery -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">🍔</div>
-                        <div class="project-links-small">
-                            <a href="https://github.com/mayur2811/food-delivery-app-backend-" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Food Delivery Backend</h3>
-                    <p class="project-description">
-                        RESTful API with JWT authentication, order management system, and restaurant database.
-                    </p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>MySQL</span>
-                        <span>JWT</span>
-                    </div>
-                </article>
-            </div>
-            
-            <!-- Upcoming Projects Section -->
-            <h3 class="upcoming-title">🚀 Coming Soon</h3>
-            <div class="upcoming-grid">
-                <article class="upcoming-card">
-                    <div class="upcoming-icon">🎰</div>
-                    <h4>Prophecy</h4>
-                    <p>Decentralized prediction market with AMM pricing and oracle-based resolution</p>
-                    <div class="upcoming-tech">
-                        <span>ERC-1155</span>
-                        <span>Oracles</span>
-                        <span>AMM</span>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="projects-cta">
-                <a href="https://github.com/mayur2811" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    View All Repositories
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         MEDIUM ARTICLES
-    ======================================== -->
-    <section class="articles section" id="articles">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">05.</span> Articles & Insights
-            </h2>
-            <p class="section-subtitle">Sharing knowledge about AI, Web3 security, and blockchain technology</p>
-            
-            <div class="articles-grid">
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5z"/>
-                        </svg>
-                    </div>
-                    <h3 class="article-title">Your AI Employee Started Work Today — And You Didn't Even Know It</h3>
-                    <p class="article-excerpt">Exploring how AI agents are silently transforming the workplace...</p>
-                    <a href="https://medium.com/@zalamayursinh2811/your-ai-employee-started-work-today-and-you-didnt-even-know-it-1ab98f067fd7" target="_blank" class="article-link">Read on Medium →</a>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                        </svg>
-                    </div>
-                    <h3 class="article-title">The $3.2 Trillion Opportunity: AI Agents Reshaping Enterprise Security</h3>
-                    <p class="article-excerpt">How early adopters are leveraging AI for unprecedented security gains...</p>
-                    <a href="https://medium.com/@zalamayursinh2811/the-3-2-trillion-opportunity-why-ai-agents-are-reshaping-enterprise-security-and-how-early-316db43139f3" target="_blank" class="article-link">Read on Medium →</a>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-                        </svg>
-                    </div>
-                    <h3 class="article-title">Cheat Sheet for Quick Find Scams in Web3</h3>
-                    <p class="article-excerpt">Essential guide to identify and avoid Web3 scams before it's too late...</p>
-                    <a href="https://medium.com/@zalamayursinh2811/cheat-sheet-for-quick-find-scams-in-web3-dca169c00010" target="_blank" class="article-link">Read on Medium →</a>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-                        </svg>
-                    </div>
-                    <h3 class="article-title">AI Smart Contract Audit Checklist 2025</h3>
-                    <p class="article-excerpt">Must-know security checks before you lose money to vulnerabilities...</p>
-                    <a href="https://medium.com/@zalamayursinh2811/%EF%B8%8Fai-smart-contract-audit-checklist-2025-you-must-know-before-you-lost-money-9e063e94cb13" target="_blank" class="article-link">Read on Medium →</a>
-                </article>
-                
-                <article class="article-card">
-                    <div class="article-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/>
-                        </svg>
-                    </div>
-                    <h3 class="article-title">Complete 2025 Crypto Hacks & Exploits</h3>
-                    <p class="article-excerpt">Comprehensive analysis of all major crypto security incidents in 2025...</p>
-                    <a href="https://medium.com/@zalamayursinh2811/complete-2025-crypto-hacks-exploits-all-incidents-9c6fa81dde10" target="_blank" class="article-link">Read on Medium →</a>
-                </article>
-            </div>
-            
-            <div class="articles-cta">
-                <a href="https://medium.com/@zalamayursinh2811" target="_blank" class="btn btn-secondary">
-                    View All Articles
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         SECURITY RESEARCH / BUG BOUNTY
-    ======================================== -->
-    <section class="security section" id="security">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">06.</span> Security Research
-            </h2>
-            <p class="section-subtitle">Active security researcher identifying vulnerabilities in DeFi protocols</p>
-            
-            <div class="security-stats">
-                <div class="stat-card">
-                    <span class="stat-number">9</span>
-                    <span class="stat-label">Reports Submitted</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">5</span>
-                    <span class="stat-label">Protocols Tested</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Critical Findings</span>
-                </div>
-                <div class="stat-card pending">
-                    <span class="stat-number">1</span>
-                    <span class="stat-label">Rewards Pending</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">$0</span>
-                    <span class="stat-label">Rewards Earned</span>
-                </div>
-            </div>
-            
-            <div class="reports-table">
-                <div class="table-header">
-                    <span>Platform</span>
-                    <span>Protocol</span>
-                    <span>Finding</span>
-                    <span>Severity</span>
-                    <span>Status</span>
-                    <span>Reward</span>
-                </div>
-                
-                <div class="table-row highlight">
-                    <span class="platform">Direct Email</span>
-                    <span class="protocol">THORChain</span>
-                    <span class="finding">Critical DeFi Vulnerability — Under Responsible Disclosure</span>
-                    <span class="severity critical">Critical</span>
-                    <span class="status approved">Approved</span>
-                    <span class="reward pending-reward">Pending</span>
-                </div>
-                
-                <div class="table-row highlight">
-                    <span class="platform">Direct Email</span>
-                    <span class="protocol">THORChain</span>
-                    <span class="finding">Critical DeFi Vulnerability — Under Responsible Disclosure</span>
-                    <span class="severity critical">Critical</span>
-                    <span class="status pending">Awaiting Decision</span>
-                    <span class="reward">—</span>
-                </div>
-                
-                <div class="table-row">
-                    <span class="platform">HackenProof</span>
-                    <span class="protocol">Astros</span>
-                    <span class="finding">Multi-Signature Bypass via Uninitialized Threshold</span>
-                    <span class="severity critical">Critical</span>
-                    <span class="status duplicate">Duplicate</span>
-                    <span class="reward">$0</span>
-                </div>
-                
-                <div class="table-row">
-                    <span class="platform">HackenProof</span>
-                    <span class="protocol">Solv</span>
-                    <span class="finding">Cross-Vault Signature Replay Attack</span>
-                    <span class="severity high">High</span>
-                    <span class="status closed">Out of Scope</span>
-                    <span class="reward">$0</span>
-                </div>
-                
-                <div class="table-row">
-                    <span class="platform">HackenProof</span>
-                    <span class="protocol">Celestia</span>
-                    <span class="finding">rsmt2d Nil/Empty Data DoS Vulnerability</span>
-                    <span class="severity medium">Medium</span>
-                    <span class="status informative">Informative</span>
-                    <span class="reward">$0</span>
-                </div>
-                
-                <div class="table-row">
-                    <span class="platform">HackenProof</span>
-                    <span class="protocol">Celestia</span>
-                    <span class="finding">go-fraud Height Validation Bypass</span>
-                    <span class="severity medium">Medium</span>
-                    <span class="status informative">Informative</span>
-                    <span class="reward">$0</span>
-                </div>
-            </div>
-            
-            <h3 class="platforms-title">Submission Platforms</h3>
-            <div class="platforms-grid">
-                <a href="https://hackenproof.com/hackers/zalamayursinh282002" target="_blank" class="platform-card">
-                    <div class="platform-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <span class="platform-name">HackenProof</span>
-                    <span class="platform-desc">Bug Bounty Platform</span>
-                </a>
-                <div class="platform-card">
-                    <div class="platform-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                    </div>
-                    <span class="platform-name">Direct Email</span>
-                    <span class="platform-desc">Private Disclosure</span>
-                </div>
-            </div>
-            
-            <div class="security-cta">
-                <a href="https://hackenproof.com/hackers/zalamayursinh282002" target="_blank" class="btn btn-primary">
-                    View HackenProof Profile
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         EDUCATION & CERTIFICATIONS
-    ======================================== -->
-    <section class="education section" id="education">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">05.</span> Education & Certifications
-            </h2>
-            
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="edu-icon">🎓</div>
-                    <h3>Bachelor of Engineering</h3>
-                    <p class="edu-field">Computer Engineering</p>
-                    <p class="edu-school">Ahmedabad Institute of Technology, Gujarat</p>
-                    <p class="edu-period">Aug 2021 – Apr 2025</p>
-                    <p class="edu-grade">CGPA: 7.5/10</p>
-                </div>
-                
-                <div class="certifications-card">
-                    <h3>Certifications & Achievements</h3>
-                    <ul class="cert-list">
-                        <li>
-                            <span class="cert-icon">☕</span>
-                            HackerRank Java Certification
-                        </li>
-                        <li>
-                            <span class="cert-icon">💼</span>
-                            Deloitte Technology Job Simulation
-                        </li>
-                        <li>
-                            <span class="cert-icon">💻</span>
-                            150+ Coding Problems Solved (LeetCode)
-                        </li>
-                        <li>
-                            <span class="cert-icon">📦</span>
-                            Active GitHub Portfolio
-                        </li>
-                        <li>
-                            <span class="cert-icon">🔐</span>
-                            Professional Smart Contract Development
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================
-         CONTACT SECTION
-         - Ways to reach out
-         - Call to action
-    ======================================== -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">06.</span> Get In Touch
-            </h2>
-            
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm looking for <span class="highlight">remote blockchain security and smart contract roles</span>. 
-                    Whether you need security research, smart contract development, or auditing help, 
-                    my inbox is always open!
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>
+                    I'm a Blockchain Security Researcher and Smart Contract Engineer focused on finding critical vulnerabilities 
+                    in decentralized finance protocols and building secure, scalable Web3 architectures.
+                </p>
+                <p>
+                    Currently, I'm working remotely across 5+ countries, shipping CertiK-audited contracts and collaborating 
+                    with top security teams like ThorSec on responsible disclosures. My approach blends deep offensive security 
+                    knowledge with robust engineering practices.
                 </p>
                 
-                <div class="contact-highlights">
-                    <div class="contact-highlight">
-                        <span>🌍</span> Available Globally
-                    </div>
-                    <div class="contact-highlight">
-                        <span>⏰</span> Flexible with Time Zones
-                    </div>
-                    <div class="contact-highlight">
-                        <span>🚀</span> Can Start Immediately
-                    </div>
+                <div class="about-badges">
+                    <div class="badge highlight"><i data-lucide="shield-check" style="width: 16px; color: var(--accent-secondary)"></i> ThorChain Bug Hunter</div>
+                    <div class="badge"><i data-lucide="check-circle" style="width: 16px; color: var(--accent-primary)"></i> CertiK Audited</div>
                 </div>
-                
-                <a href="mailto:zalamayursinh2811@gmail.com" class="btn btn-primary btn-large">
-                    Say Hello
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                </a>
-                
-                <div class="contact-links">
-                    <a href="mailto:zalamayursinh2811@gmail.com" class="contact-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        <span>zalamayursinh2811@gmail.com</span>
-                    </a>
-                    <a href="tel:+918320731789" class="contact-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        </svg>
-                        <span>+91 8320731789</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mayursinh-zala-web3/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/mayur2811" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://x.com/zalamayursinh28" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                        </svg>
-                        <span>Twitter/X</span>
-                    </a>
+            </div>
+            
+            <div class="about-image reveal" style="transition-delay: 0.2s">
+                <img src="mayur_crypto.png" alt="Mayursinh Zala">
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container">
+        <h2 class="reveal"><span class="section-num">01.5</span> Tech Matrix</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <i data-lucide="lock" class="skill-icon" style="color: var(--accent-primary)"></i>
+                <h3>Blockchain & Security</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Solidity</span>
+                    <span class="skill-tag">Auditing</span>
+                    <span class="skill-tag">DeFi</span>
+                    <span class="skill-tag">EVM</span>
+                    <span class="skill-tag">Staking</span>
+                    <span class="skill-tag">Foundry</span>
+                </div>
+            </div>
+            
+            <div class="skill-card reveal" style="transition-delay: 0.1s">
+                <i data-lucide="server" class="skill-icon" style="color: var(--accent-secondary)"></i>
+                <h3>Backend Systems</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+            
+            <div class="skill-card reveal" style="transition-delay: 0.2s">
+                <i data-lucide="layout" class="skill-icon" style="color: var(--accent-primary)"></i>
+                <h3>Frontend & Web3</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Web3.js</span>
+                    <span class="skill-tag">Ethers.js</span>
+                    <span class="skill-tag">WalletConnect</span>
+                </div>
+            </div>
+            
+            <div class="skill-card reveal" style="transition-delay: 0.3s">
+                <i data-lucide="terminal" class="skill-icon" style="color: var(--accent-secondary)"></i>
+                <h3>Tooling & Testing</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Hardhat</span>
+                    <span class="skill-tag">Slither</span>
+                    <span class="skill-tag">Mythril</span>
+                    <span class="skill-tag">Fuzz Testing</span>
+                    <span class="skill-tag">Linux</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========================================
-         FOOTER
-    ======================================== -->
-    <footer class="footer">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container">
+        <h2 class="reveal"><span class="section-num">02</span> Execution Log</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="job-type-badge badge-red">BUG BOUNTY</div>
+                <div class="job-header">
+                    <h3 class="job-title">Blockchain Security Researcher</h3>
+                    <span class="job-date">Dec 2025 - Present</span>
+                </div>
+                <div class="job-company">Independent | Bug Bounty Programs</div>
+                <ul class="job-details">
+                    <li>Discovered and reported critical security vulnerabilities in ThorChain's Rujira protocol (approved by ThorSec).</li>
+                    <li>Identified critical-severity bugs in DeFi smart contracts — details under responsible disclosure.</li>
+                    <li>Developed comprehensive proof-of-concept exploits and collaborated with security teams.</li>
+                </ul>
+                <div class="project-tech" style="margin-bottom:0">
+                    <span>Rust</span> <span>CosmWasm</span> <span>Solidity</span> <span>PoC Exploit Dev</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="job-type-badge badge-blue">REMOTE</div>
+                <div class="job-header">
+                    <h3 class="job-title">Smart Contract Developer</h3>
+                    <span class="job-date">Oct 2025 - Present</span>
+                </div>
+                <div class="job-company">GrowForce FZCO / iEscrow.io | Dubai, UAE</div>
+                <ul class="job-details">
+                    <li>Developed production-ready smart contracts for $ESCROW ecosystem on Ethereum mainnet.</li>
+                    <li>Architected ERC-20 token with staking (variable APY), vesting schedules, and multi-phase presales.</li>
+                    <li>Contracts audited by CertiK — resolved all security findings with zero post-audit critical vulnerabilities.</li>
+                    <li>Worked remotely with international team across 5+ countries using async communication.</li>
+                </ul>
+                <div class="project-tech" style="margin-bottom:0">
+                    <span>Solidity</span> <span>Web3.js</span> <span>React</span>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="job-type-badge badge-blue">REMOTE</div>
+                <div class="job-header">
+                    <h3 class="job-title">Full-Stack Blockchain Developer</h3>
+                    <span class="job-date">Jan 2025 - Present</span>
+                </div>
+                <div class="job-company">Self-Employed / Portfolio Projects</div>
+                <ul class="job-details">
+                    <li>Built cross-chain token bridge with lock-and-mint mechanism, multi-validator consensus, and fraud proofs.</li>
+                    <li>Developed DeFi lending protocol with supply/borrow mechanics, liquidation protection, and dynamic APY.</li>
+                    <li>Created production-grade test suites with 77+ tests and 92% coverage. Deployed to Sepolia & Holesky.</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item reveal">
+                <div class="job-type-badge badge-blue">REMOTE</div>
+                <div class="job-header">
+                    <h3 class="job-title">Backend Developer Intern</h3>
+                    <span class="job-date">Jan 2025 - Apr 2025</span>
+                </div>
+                <div class="job-company">Zidio Development</div>
+                <ul class="job-details">
+                    <li>Built scalable REST APIs using Java, Spring Boot, and MySQL.</li>
+                    <li>Integrated Cashfree payment gateway with webhook processing and JWT auth with role-based access.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+        <h2 class="reveal"><span class="section-num">03</span> Deployed Modules</h2>
+        
+        <div class="projects-grid">
+            
+            <!-- AuditSwarm -->
+            <article class="project-card featured reveal">
+                <div class="project-image" style="background: var(--bg-surface-hover); display: flex; align-items: center; justify-content: center;">
+                    <div style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent-primary);">AuditSwarm</div>
+                </div>
+                <div class="project-content-pad">
+                    <div class="project-label">Startup / Product</div>
+                    <h3 class="project-title">AuditSwarm - Protocol AI Security</h3>
+                    <p class="project-desc">
+                        The only AI auditor that analyzes your entire protocol, not just single contracts. 
+                        Features multi-contract protocol analysis, dependency graph visualization, and exploit storytelling.
+                        Finds cross-contract exploits before hackers do.
+                    </p>
+                    <div class="project-tech">
+                        <span>AI/LLM</span> <span>Solidity</span> <span>Security</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://auditswarm.in/" target="_blank"><i data-lucide="external-link"></i> Launch App</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ChainSentry -->
+            <article class="project-card featured reveal">
+                <div class="project-image" style="background: var(--bg-primary); display: flex; align-items: center; justify-content: center; border-right: 1px solid var(--border-light);">
+                    <div style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent-secondary);">ChainSentry</div>
+                </div>
+                <div class="project-content-pad">
+                    <div class="project-label">Startup / Product</div>
+                    <h3 class="project-title">ChainSentry - AI Agent Security</h3>
+                    <p class="project-desc">
+                        A robust security layer built specifically for AI agents operating in Web3. 
+                        Protects automated crypto transactions from scams, honeypots, and rug pulls, ensuring safe and verified interactions.
+                    </p>
+                    <div class="project-tech">
+                        <span>AI Agents</span> <span>React</span> <span>Tx Screening</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://chain-sentry-green.vercel.app/" target="_blank"><i data-lucide="external-link"></i> Launch App</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- NexusLend -->
+            <article class="project-card regular reveal">
+                <div class="project-label">DeFi Protocol</div>
+                <h3 class="project-title">NexusLend AI</h3>
+                <p class="project-desc">
+                    AI-powered DeFi lending protocol with supply/borrow mechanics, health factor monitoring, liquidation protection, and dynamic APY.
+                </p>
+                <div class="project-tech">
+                    <span>Solidity</span> <span>Next.js</span> <span>Chainlink</span>
+                </div>
+                <div style="margin-top: auto; padding-top: 2rem;" class="project-links">
+                    <a href="https://github.com/mayur2811/nexuslend-" target="_blank"><i data-lucide="github"></i> Repository</a>
+                </div>
+            </article>
+
+            <!-- ChainBridge -->
+            <article class="project-card regular reveal" style="transition-delay: 0.1s">
+                <div class="project-label">Infrastructure</div>
+                <h3 class="project-title">ChainBridge</h3>
+                <p class="project-desc">
+                    Production-grade cross-chain token bridge with lock-and-mint mechanism, multi-validator consensus, and emergency controls.
+                </p>
+                <div class="project-tech">
+                    <span>Solidity</span> <span>Foundry</span> <span>RainbowKit</span>
+                </div>
+                <div style="margin-top: auto; padding-top: 2rem;" class="project-links">
+                    <a href="https://github.com/mayur2811/chainbridge" target="_blank"><i data-lucide="github"></i> Repository</a>
+                </div>
+            </article>
+            
+            <!-- Minor Projects -->
+            <article class="project-card regular reveal">
+                <h3 class="project-title" style="font-size: 1.25rem;">Ethereum Todo DApp</h3>
+                <p class="project-desc" style="font-size: 0.95rem;">Full-stack decentralized todo application with Solidity smart contracts and Web3.js integration.</p>
+                <div style="margin-top: auto;" class="project-links">
+                    <a href="https://github.com/mayur2811/ethe-todo" target="_blank"><i data-lucide="github" style="width: 16px;"></i> Code</a>
+                </div>
+            </article>
+            
+            <article class="project-card regular reveal" style="transition-delay: 0.1s">
+                <h3 class="project-title" style="font-size: 1.25rem;">Prophecy (Upcoming)</h3>
+                <p class="project-desc" style="font-size: 0.95rem;">Decentralized prediction market with AMM pricing and oracle-based resolution.</p>
+                <div class="project-tech"><span>ERC-1155</span> <span>AMM</span></div>
+            </article>
+
+        </div>
+    </section>
+    
+    <!-- SECURITY RESEARCH -->
+    <section id="security" class="container">
+        <h2 class="reveal"><span class="section-num">04</span> Security Operations</h2>
+        
+        <div class="reveal" style="background: var(--bg-surface); border: 1px solid var(--border-light); border-radius: 8px; padding: 2rem; overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-family: var(--font-mono); font-size: 0.9rem;">
+                <thead>
+                    <tr style="border-bottom: 1px solid var(--border-light);">
+                        <th style="padding: 1rem; color: var(--text-secondary);">Protocol</th>
+                        <th style="padding: 1rem; color: var(--text-secondary);">Severity</th>
+                        <th style="padding: 1rem; color: var(--text-secondary);">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.02);">
+                        <td style="padding: 1rem; color: #fff;">ThorChain (Rujira)</td>
+                        <td style="padding: 1rem;">
+                            <span style="color: #ef4444; background: rgba(239, 68, 68, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);">CRITICAL</span>
+                        </td>
+                        <td style="padding: 1rem; color: var(--accent-primary);">Approved / Patched</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; color: #fff;">Confidential Protocol</td>
+                        <td style="padding: 1rem;">
+                            <span style="color: #ef4444; background: rgba(239, 68, 68, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);">CRITICAL</span>
+                        </td>
+                        <td style="padding: 1rem; color: var(--accent-secondary);">Responsible Disclosure</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section id="articles" class="container">
+        <h2 class="reveal"><span class="section-num">05</span> Transmission Logs</h2>
+        
+        <div class="articles-scroll reveal">
+            <a href="https://medium.com/@zalamayursinh2811/your-ai-employee-started-work-today-and-you-didnt-even-know-it-1ab98f067fd7" target="_blank" class="article-card">
+                <i data-lucide="cpu" style="color: var(--accent-secondary); margin-bottom: 1rem; width: 32px; height: 32px;"></i>
+                <h3 class="article-title">Your AI Employee Started Work Today</h3>
+                <div class="article-meta">Medium Article • 5 min read</div>
+                <div class="article-link">Read Log <i data-lucide="arrow-right" style="width: 16px;"></i></div>
+            </a>
+            
+            <a href="https://medium.com/@zalamayursinh2811/the-3-2-trillion-opportunity-why-ai-agents-are-reshaping-enterprise-security-and-how-early-316db43139f3" target="_blank" class="article-card">
+                <i data-lucide="shield" style="color: var(--accent-primary); margin-bottom: 1rem; width: 32px; height: 32px;"></i>
+                <h3 class="article-title">The $3.2 Trillion Opportunity: AI Security</h3>
+                <div class="article-meta">Medium Article • 7 min read</div>
+                <div class="article-link">Read Log <i data-lucide="arrow-right" style="width: 16px;"></i></div>
+            </a>
+            
+            <a href="https://medium.com/@zalamayursinh2811/cheat-sheet-for-quick-find-scams-in-web3-dca169c00010" target="_blank" class="article-card">
+                <i data-lucide="alert-triangle" style="color: #ef4444; margin-bottom: 1rem; width: 32px; height: 32px;"></i>
+                <h3 class="article-title">Cheat Sheet for Quick Find Scams in Web3</h3>
+                <div class="article-meta">Medium Article • 4 min read</div>
+                <div class="article-link">Read Log <i data-lucide="arrow-right" style="width: 16px;"></i></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container reveal">
+        <h2>Establish Connection</h2>
+        <p>Looking for a security researcher or smart contract engineer? My inbox is open.</p>
+        
+        <a href="mailto:zalamayursinh2811@gmail.com" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.5rem 3rem;">
+            Initialize Handshake <i data-lucide="mail"></i>
+        </a>
+        
+        <div class="social-links">
+            <a href="https://github.com/mayur2811" target="_blank" class="social-icon" aria-label="GitHub">
+                <i data-lucide="github"></i>
+            </a>
+            <a href="https://linkedin.com/in/mayursinh-zala-web3" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+            </a>
+            <div class="social-icon" title="Location: Gujarat, India">
+                <i data-lucide="map-pin"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="container">
-            <p class="footer-text">
-                Designed & Built by <span class="gradient-text">Mayursinh Zala</span>
-            </p>
-            <p class="footer-location">
-                📍 Gujarat, India • Open to Global Remote Opportunities
-            </p>
+            <p>&lt;MZ/&gt; © 2026 Mayursinh Zala. All systems operational.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
